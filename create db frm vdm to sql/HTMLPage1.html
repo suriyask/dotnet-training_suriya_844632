@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>  form </title>
+	
+</head>
+<style>
+#color{
+	color:red;}
+	</style>
+	<script type="text/javascript"/>
+	function agecalculation()
+	{
+		var a=document.getElementById("ag")
+		if(a>16 && a<61)
+		return true;
+		else
+		return false;
+	}
+	</script>
+<body>
+<table>
+<form>
+<tr><td> First name</td><td> <input type="text" required/></td><td id="color">*</td></tr>
+<tr><td> Age </td><td> <input type="integer" id="ag" onsubmit="agecalculation()" required/></td><td id="color">*</td></tr>
+<tr><td> Login name</td><td> <input type="text"required/></td><td id="color">*</td></tr>
+<tr><td> Password</td><td> <input type="password"required/></td><td id="color">*</td></tr>
+<tr><td> Confirm password</td><td> <input type="password"required/></td><td id="color">*</td></tr>
+<tr><td> Experience</td><td> <input type="text"required/></td><td id="color">*</td></tr>
+<tr><td> Salary expected</td><td> <input type="text"required/></td><td id="color">*</td></tr>
+<tr><td> <input type="submit" value="add new user"/> <input type="submit" value="cancel"/></td></tr>
+
+<tr><td><p> Subscribe to newsletter</p></td></tr>
+<tr><td> Email</td><td> <input type="text"required/></td><td id="color">*</td><td><input type="submit" value="subscribe"/></td></tr>
+</table>
+<p>Errors on page</p>
+<ul>
+<li>error on page1</li>
+<li>error on page2</li>
+</ul>
+</form>
+</body>
+</html>
